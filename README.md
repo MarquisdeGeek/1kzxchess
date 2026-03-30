@@ -32,7 +32,7 @@ Starting from the commented source:
 
 * There are 11 bytes per row
 * There is a single byte at the end of each row - it is 118, not a CR or LF
-* The ZX81 does not use ASCII, so the character codes for the pieces are not obvious. K is 48 ($32) for example.
+* The ZX81 does not use ASCII, so the character codes for the pieces are not obvious. K is 48 ($30) for example.
 * Knights are represented by 'N' to avoid confusion with 'K'ings.
 * White pieces are shown with normal text, while black are inverse. The codes differ only insomuch as black has the MSB (0x80) set. This is used extensively.
 * My disass produced `CP A,C` for comparison, although A is implicit and sjasmplus consequently treated it as a two byte instruction. (See also SUB A,(HL)) Consequently, I need to change these instructions.
